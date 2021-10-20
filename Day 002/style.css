@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 67%;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background: url("shoe-5.png"),#333;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 75vh;
+}
+
+header > h1{
+    padding: 5rem;
+    font-size: 6rem;
+    color: #f5f5f5;
+}
+
+header > p{
+    font-size: 1.6rem;
+    color: #f5f5f5;
+    padding: 3rem;
+}
+
+.btn{
+    background-color:gold;
+    color: #f5f5f5;
+    padding: 1.2rem;
+    border: none;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color:rgb(226, 194, 10);
+}
+img{
+    width: 150px;
+}
+
+.feature{
+    text-align: center;
+    margin:  5rem 0rem;
+    background-color: rgba(136, 136, 136, 0.425);
+    height: 60vh;
+}
+
+.feature > h1{
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 4rem;
+    margin-top: 5rem;
+}
+
+.about-product{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-product > div {
+    background-color: royalblue;
+    background-position:right;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+}
+
+.price{
+    margin-top: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem;
+   }
+
+   .about{
+       color: #333;
+       font-weight: 400;
+   }
+
+   .Products >h1{
+       font-size: 4rem;
+       font-weight: 600;
+       padding: 3rem 1rem;
+       text-align: center;
+   }
+
+   .product{
+       padding: 1rem ;
+       width: 70vw;
+       margin: 4rem auto;
+       height:45vh;
+       background-color: gold;
+       border-radius: 1rem;
+   }
+
+   .img > img{
+       float: right;
+        height: 20rem;
+       width: 20rem;
+   }
+
+   .product-summary{
+       width: 60%;
+       float: left;
+   }
+   .product-summary > h1{
+       font-size: 3.6rem;
+       font-weight: 800;
+       margin:2rem ;
+   }
+   .product-summary > p{
+       font-size: 1.4rem;
+       color: black;
+       font-weight: 600;
+       padding: 1rem ;
+   }
+   .button{
+    background-color: rgb(116, 8, 8);
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+   }
+
+   .product-3{
+       background-color: royalblue;
+   }
+
+   .product-3 > .product-summary .button{
+       background-color: rgb(22, 58, 167);
+   }
+
+   .product-2{
+       background-color: sandybrown;
+   }
+
+   .product-2 .product-summary{
+       float: right;
+   }
+   .product-2 .img img {
+       left: 1px;
+   }
+
+   .product-2 > .product-summary .button{
+     background-color: rgb(18, 10, 70);
+   }
+
+
+   /***************************************************************************************************************/
+
+/*Hover Effects */
+
+.button:hover{
+  cursor: pointer;
+}
+
+.about-product > div:hover{
+    cursor: pointer;
+}
+.about-product img:hover{
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+/*******************************************ResPonsive**********************************************/
+
+
+@media screen and (max-width:834px) {
+ .Products{
+     display: flex;
+     flex-direction: column;
+ }
+ .product{
+     height: 100%;
+ }
+
+ header{
+ height: 100vh;
+ }
+  }
+
+  @media screen and (max-width:562px) {
+      header >h1{
+          padding: 3rem;
+      }
+  .feature{
+      height: 100vh;
+  }
+      .about-product{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+      }
+      .about-product > div{
+          display: flex;
+          align-items: center;
+      }
+      
+  }
