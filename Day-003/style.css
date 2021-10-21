@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgba(136, 136, 136, 0.205);
+}
+.navbar ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    margin: 2rem;
+    list-style: none;
+}
+
+.navbar ul li,.pakage >div{
+   background-color: rgba(136, 136, 136, 0.055);
+   padding: 0.5rem;
+   text-align: center;
+   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.411);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pakage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    margin: 2rem;
+    grid-auto-rows: minmax(100px,auto);
+}
+.banner{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    color:black;
+    font-weight: 900;
+    justify-items: left;
+    background-image: url("web.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+ }
+
+.btn{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+    width: 6rem;
+    margin-top: 2rem;
+   
+}
+
+.Mbtn{
+    padding: 0.5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.membership{
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.analysis{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.tag{
+    font-weight: 600;
+}
+
+.business{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    margin: 1.5rem;
+}
+.business img{
+    width:700px;
+    height: 300px;
+}
+
+
+.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.7rem;
+}
+
+.image img {
+    width: 200px;
+    height: 300px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #333;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:872px ) {
+   .business{
+       display: block;
+   }
+ .image{
+     grid-template-columns: repeat(3,1fr);
+ }
+    
+}
+
+@media screen and (max-width:670px) {
+    .pakage{
+        grid-template-columns: 1fr;
+    }
+
+    .image{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .business img {
+        width: 100vw;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .pakage{
+        display: block;
+    }
+    .navbar ul{
+        display: block;
+    }
+}
