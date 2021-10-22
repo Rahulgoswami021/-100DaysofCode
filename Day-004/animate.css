@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #12475f;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.content{
+    max-width: 800px;
+    margin: auto;
+    padding:0 30px;
+    height: 200px;
+    position: relative;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+h1{
+    font-size:50px;
+    margin-bottom: 200px;
+    position: relative;
+    animation: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    padding: 1rem 2rem;
+    border:1px solid white;
+    background-color: #12475f;
+    position: relative;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.btn:hover{
+    transform: rotateY(360deg);
+}
+
+@keyframes heading {
+    0%{
+        top:-50px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+
+@keyframes box {
+    0%{
+        left:-1000px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes btn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
