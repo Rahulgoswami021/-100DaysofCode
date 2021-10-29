@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 70%;
+    background-color: #001b48;
+}
+
+header{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    color: #97cadb;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px 10px ;
+}
+
+header p{
+    color: #D6e8ee;
+    font-size: 1rem;
+    padding: 2rem;
+    text-shadow: none;
+}
+
+#main{
+    text-align: center;
+    border: 1px solid #02457a;
+    color: #D6e8ee;
+    padding: 1rem;
+}
+
+.tag-line{
+     font-size: 1.9rem;
+     padding: 1.3rem;
+     font-weight: 600;
+}
+
+form input[type="text"]{
+    width:70%;
+    padding: 0.4rem;
+    margin: 2rem auto;
+    background-color: #001b48;
+    border: none;
+    border-bottom: 2px solid #97cadb;
+    caret-color: #D6e8ee;
+    color: #D6e8ee;
+}
+
+
+button{
+    border: none;
+    background-color: #02457a;
+    color:#D6e8ee;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+.steps,.congrets{
+    font-size: 1rem;
+    padding: 1rem;
+}
